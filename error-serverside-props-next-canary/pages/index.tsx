@@ -1,10 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
+/** Add your relevant code here for the issue to reproduce */
 export default function Home() {
   throw new Error('Crash homepage');
-  return <div>Homepage</div>
+  return null
 }
 
 export function getServerSideProps() {
@@ -12,3 +9,4 @@ export function getServerSideProps() {
     props: {}
   }
 }
+
